@@ -1,5 +1,5 @@
-FROM golang:1.21-alpine
+FROM alpine:3.18
 WORKDIR /src
 COPY . .
-RUN yum update
+RUN pip install
 RUN yum install php
